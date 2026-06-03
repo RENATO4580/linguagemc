@@ -1,4 +1,4 @@
-# Estudo da lingagem c 
+# Estudo da linguagem c 
 ## Aplicada a lógica de programação e algoritmos
 <p align="centrer">
 <img src="images.jpeg" width="300" height="300">
