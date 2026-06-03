@@ -2,19 +2,14 @@
 #include <stdlib.h>
 
 int main(){
-
     system("clear");
+    char *PrimeiroNome;
 
-    char *primeiroNome;
-    
-    printf("digite o seu nome e tecle Enter\n");
-    scanf("%s",primeiroNome);
+    printf("Digite o seu nome e tecle ENTER\n");
+    scanf("%s",PrimeiroNome);
 
-    printf("Olá,Sr.(a)%\n",primeiroNome);
+    printf("Olá, Sr(a). %s\n",PrimeiroNome);
 
     return 0;
-
-
-
 
 }

@@ -1,33 +1,32 @@
 #include <stdio.h>
 int main(){
-    //vamos usar as variáveis com o tipo de dado float, pois.
-    // este programa recebe valores com casas decimais 
+    //Vamos usar as variáveis com o tipo de dado float, pois, 
+    //este programa recebe valores com casas decimais
     float preco;
     float taxa;
-    float parcela;
+    float parcelas;
     float resultado;
-    float resultadoParcela; 
+    float resultadoParcelas;
     /*
-    camel case (nomocompletocliente)
-    snake case (nome_completo_cliente)
-    simples case (nome completocliente)
+    Camel Case (nomeCompletoCliente)
+    Snake Case (nome_completo_cliente)
+    Simple Case (nomecompletocliente)
     */
 
-    printf("digite o preço do produto e tecle Enter\n");
-    scanf("%f",&preco);
+    printf("Digite o preço do produto e tecle Enter\n");
+    scanf("%f", &preco);
 
-    printf("digite a taxa de acréscimo sem o simbolo de porcentagem e tecle Enter\n");
-    scanf("%f" ,&taxa);
+    printf("Digite a taxa de acréscimo sem o simbolo de porcentagem e tecle Enter\n");
+    scanf ("%f" ,&taxa);
 
-    printf("digite o número de parcelas e tecle Enter\n");
-    scanf("%f" ,&parcela);
+    printf("Digite o número de parcelas e  tecle Enter\n");
+    scanf("%f" ,&parcelas);
 
     resultado = preco * (taxa /100) + preco;
-    resultadoParcela = resultado / parcela;
+    resultadoParcelas = resultado / parcelas;
 
-    printf("o valor final do produto é R$ %.2f\n" , resultado);
-    printf("o valor da parcela é R$ %.2f\n" ,resultadoParcela);
-
+    printf("O valor final do produto é R$ %.2f\n" ,resultado);
+    printf("O valor da parcela é R$ %.2f\n" ,resultadoParcelas);
 
     return 0;
 

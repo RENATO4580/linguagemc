@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    system("clear");
+    int i;
+    for( i = 0 ; i < 100 ; i++){
+        printf("=");
+    }
+
+    printf("\ncliente \n");
+    printf("\nvendedor \n");
+    printf("\nproduto \n");
+    char clienteNome[10];
+    char vendedor[10];
+    char produto[10];
+    float preco;
+    char formadopagamento[10];
+
+    float precooriginal;
+    float precofinal;
+    float valorParcela = 0;
+    int parcelas = 0;
+
+
+
+    printf("Digite o nome do cliente: \n");
+    fgets(clienteoNome,10,stdin);
+
+    printf("Digite o nome do vendedor: \n");
+    fgets(vendedor,10,stdin);
+
+    printf("Digite o nome do produto: \n");
+    fgets(produto,10,stdin);
+
+    printf("Digite o preço: \n");
+    scanf("%f",&preco);
+
+
+    // Vamos criar um arquivo de texto para guardar os dados da venda
+
+    FILE *arquivo = fopen("files/cadastro.txt","a");
+
+    fprintf(arquivo, "Nome: %s" ,clienteNome);
+    fprintf(arquivo, "vendedornome: %s" ,vendedor);
+    fprintf(arquivo,"produto: %s" ,produto);
+    fprintf(arquivo,"Preço: %d\n",preço);
+    fprintf(arquivo,"==================venda de produto:==========================================\n");
+
+    
+
+    //Vamos fechar o arquivo
+    fclose(arquivo);
+    return 0;
+
+    }

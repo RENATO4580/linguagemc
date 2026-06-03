@@ -6,15 +6,15 @@ int main(){
     int ano;
     int qtd = 0;
 
-    for (ano = 1950 ; ano <= 2026; ano++){
-         if ( ano % 4 == 0 ){
-              printf("o ano %d é bissesto\n" ,ano);
-              qtd++;
-         }
-         
+    for(ano = 1950 ; ano <= 2026; ano++){
+        if( ano % 4 == 0 ){
+            printf("O ano %d é bissexto\n" ,ano);
+            qtd++;
+        }
+
     }
-    printf("================================\n");
-    printf("A quantidade de anos bissesto é %d\n" ,qtd);
+    printf("======================================\n");
+    printf("A quantidade de anos bissextos é %d\n" ,qtd);
     return 0;
 
 }

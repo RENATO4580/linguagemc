@@ -1,10 +1,8 @@
-#include <stdio.h>
+#include <stdio.h> 
 
 int main(){
 
-printf("olá, seja bem vindo");
+    printf("Olá, seja bem vindo!");
 
-return 0;
-
+    return 0;
 }
-

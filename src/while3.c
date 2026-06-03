@@ -2,22 +2,12 @@
 
 int main(){
     int i = 1;
-        
-        while ( i <=50){
-            if( i%3 == 0){
-                printf("este número %d é multiplo de 3\n",i);
-            }
-            i++;
+    while( i <= 50){
+        if( i%3 == 0){
+            printf("Este número %d é multiplo de 3\n" ,i);
 
         }
-
-        return 0;
-        
-              
-        
-        }
-        
-       
-        
-
-
+        i++;
+    }
+    return 0;
+}

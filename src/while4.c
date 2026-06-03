@@ -1,27 +1,20 @@
-#include <stdio.h> 
+#include <stdio.h>
 
 int main(){
     int linha, coluna;
-
     linha = 1;
     coluna = 1;
 
-    while ( linha <= 10){
-                while ( coluna <= 30){
-            printf("$");
+    while(linha <= 10){
+        while(coluna <= 30){
+            printf("#");
             coluna++;
-
         }
-        // voltar a contagem da coluna ao valor 
-        // inicial 1
+        //Voltar a contagem da coluna ao valor
+        //inicial 1
         coluna = 1;
         printf("\n");
         linha++;
-        
     }
     return 0;
-
-
-
-
 }
