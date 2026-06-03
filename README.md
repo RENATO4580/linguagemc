@@ -23,4 +23,14 @@ programação c.
 * Ponteiro
 *Criação de arquivo
 
-    
+
+#### Demostração de uma estrutura simples de arquivo .c
+
+``` c
+#include <stdio .h>
+int main (){
+    int X = 10; 
+    printf("O valor é %d\n" , X);
+    return 0;
+
+}
